@@ -5,9 +5,12 @@ header{
     height: 80px;
     background-color: #06131F;
 }
-img{
+header img{
     height: 50px;
 }
 .card{
     background-color: #112030;
+}
+.autore{
+    font-size: 14px;
 }

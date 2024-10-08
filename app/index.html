@@ -18,17 +18,17 @@
         </div>
     </header>
     <main id="app" class="container">
-        <div class="row">
-            <div class="col-3">
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="text-white">titolo</h5>
-                        <p class="text-white">autore</p>
-                        <p class="text-white">anno</p>
+        <div class="row justify-content-between">
+            <!-- <div class="col-1"> -->
+                <div class="card m-5 p-3" style="width: 18rem;" v-for="(disco, index) in dischiList" key="index">
+                    <img :src="disco.poster" class="card-img-top" :alt="disco.title">
+                    <div class="card-body pb-0">
+                        <h5 class="text-white text-center fw-bold">{{disco.title}}</h5>
+                        <p class="text-white text-center mb-2 autore">{{disco.author}}</p>
+                        <p class="text-white text-center mb-0 fw-bold">{{disco.year}}</p>
                     </div>
                 </div>
-            </div>
+            <!-- </div> -->
         </div>
 
 
