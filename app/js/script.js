@@ -11,7 +11,7 @@ const { createApp } = Vue
     methods:{
         getListDischi(){
             axios.get('http://localhost/php-dischi-json/api/')
-                .then(function (response) {
+                .then((response) => {
                     // handle success
                     console.log(response);
                     this.dischiList = response.data;
