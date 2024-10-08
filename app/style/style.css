@@ -11,6 +11,9 @@ header img{
 .card{
     background-color: #112030;
 }
+.card:hover{
+    cursor: pointer;
+}
 .autore{
     font-size: 14px;
 }
