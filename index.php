@@ -14,7 +14,7 @@
 
 // Bonus
 // Al click su un disco, recuperare e mostrare i dati del disco selezionato.
-
+$dischiList = file_get_contents("json/dischi.json");
 header("Content-type: application/json");
-echo file_get_contents("json/dischi.json");
+echo $dischiList;
 ?>
