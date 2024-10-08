@@ -3,7 +3,7 @@ const { createApp } = Vue
   createApp({
     data() {
         return {
-            
+            dischiList : [],
         
         }
         
@@ -14,6 +14,8 @@ const { createApp } = Vue
                 .then(function (response) {
                     // handle success
                     console.log(response);
+                    this.dischiList = response.data;
+                    console.log(this.dischiList);
                 })
                 .catch(function (error) {
                     // handle error
